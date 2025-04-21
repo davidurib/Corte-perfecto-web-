@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Reproductor - Dailymotion</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      width: 90%;
+      max-width: 800px;
+      overflow: hidden;
+      border: 4px solid #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contenido Patrocinado</h1>
+  <div class="video-container">
+    <iframe 
+      src="https://geo.dailymotion.com/player.html?video=x9i8i6c"
+      allowfullscreen
+      title="Dailymotion Video Player"
+      allow="web-share">
+    </iframe>
+  </div>
+</body>
+</html>
